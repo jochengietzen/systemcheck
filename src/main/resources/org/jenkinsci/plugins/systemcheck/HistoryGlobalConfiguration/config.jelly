@@ -1,0 +1,13 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:section title="Systemcheck">
+       <f:entry title="Periodic time (in minutes) when the history file is written" field="RefreshRate">
+			<f:textbox value="${it.getRefreshRate()}"/>
+	 	</f:entry>
+       <f:entry title="Amount of Data Points stored for Load History" field="CountsOfKeepingLoad">
+          <f:textbox value="${it.getCountsOfKeepingLoad()}"/>
+       </f:entry>
+       <f:entry title="Amount of Data Points stored for Build History" field="CountsOfKeepingBuilds">
+          <f:textbox value="${it.getCountsOfKeepingBuilds()}"/>
+       </f:entry>
+    </f:section>
+</j:jelly>
